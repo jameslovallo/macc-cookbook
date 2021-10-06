@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: kaina-agency/macc-cookbook
   branch: master
 
 local_backend: true
