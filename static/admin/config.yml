@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: kaina-agency/macc-cookbook
   branch: master
-  local_backend: true
+local_backend: true
 
 media_folder: static/img
 public_folder: /img
@@ -20,5 +20,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "URL", name: "url", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Recipe & Notes", name: "body", widget: "markdown" }

@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "dev (admin proxy)": "npx netlify-cms-proxy-server",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
@@ -13,6 +14,7 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.15.1",
+    "link-preview-js": "^2.1.8",
     "nuxt": "^2.15.7",
     "vuetify": "^2.5.5"
   },

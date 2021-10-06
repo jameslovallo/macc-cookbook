@@ -5,7 +5,7 @@
 				<v-toolbar-title v-text="title" />
 			</nuxt-link>
 			<v-spacer />
-			<v-btn to="/recipes" text> Recipes </v-btn>
+			<v-btn to="/recipes" text>Recipes</v-btn>
 			<v-btn v-if="!signedIn" @click="signin" text>Sign In</v-btn>
 			<v-btn v-else @click="signout" text>Sign Out</v-btn>
 		</v-app-bar>

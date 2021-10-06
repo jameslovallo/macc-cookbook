@@ -1,7 +1,14 @@
 <template>
-	<div>
-		<h2>{{ post.title }}</h2>
-		<nuxt-content :document="post" />
+	<div class="natural-typography">
+		<h1>{{ post.title }}</h1>
+		<v-row>
+			<v-col cols="12" lg="6">
+				<v-img :src="post.image" aspect-ratio="1.333"></v-img>
+			</v-col>
+			<v-col cols="12" lg="6">
+				<nuxt-content :document="post" />
+			</v-col>
+		</v-row>
 	</div>
 </template>
 
