@@ -1,17 +1,17 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  local_backend: true
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - name: "recipes"
+    label: "Recipes"
+    folder: "content/recipes"
     format: "frontmatter"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:
