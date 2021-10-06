@@ -34,13 +34,13 @@ export default {
 		},
 	},
 	mounted() {
-		let user = JSON.parse(localStorage.getItem("netlify-cms-user"));
+		// let user = JSON.parse(localStorage.getItem("netlify-cms-user"));
 		let signedIn = localStorage.getItem("gotrue.user");
 		this.signedIn = signedIn ? true : false;
 		window.addEventListener("load", () => {
 			netlifyIdentity.on("login", () => {
 				this.signedIn = true;
-				window.location.href = window.location.hostname + "/admin/";
+				window.location.assign(window.location.origin + "/admin/");
 			});
 			netlifyIdentity.on("logout", () => {
 				this.signedIn = false;
