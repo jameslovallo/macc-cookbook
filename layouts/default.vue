@@ -40,7 +40,7 @@ export default {
 		window.addEventListener("load", () => {
 			netlifyIdentity.on("login", () => {
 				this.signedIn = true;
-				this.$router.push("/admin/");
+				window.location.href = window.location.hostname + "/admin/";
 			});
 			netlifyIdentity.on("logout", () => {
 				this.signedIn = false;
