@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h1 style="margin-block-start: 1em">
-			Welcome to the MACC Avenue Community Church Cookbook!
+			Welcome to the Mack Avenue Community Church Cookbook!
 		</h1>
 		<p>
 			This is the place to share all of your favorite recipes with the rest of

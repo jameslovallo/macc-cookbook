@@ -9,5 +9,18 @@
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      console.log("hi!");
+      window.addEventListener("load", () => {
+        CMS.registerEventListener({
+          name: "preSave",
+          handler: ({ entry }) => {
+            const author = JSON.parse(localStorage.getItem("netlify-cms-user"))
+              .name;
+            return entry.get("data").set("author", author);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
