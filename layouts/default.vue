@@ -24,7 +24,7 @@
 			</v-container>
 			<v-btn
 				v-if="$vuetify.breakpoint.smAndDown"
-				@click="signin"
+				@click="add"
 				fab
 				dark
 				color="indigo"
