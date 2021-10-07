@@ -1,3 +1,7 @@
+html {
+  overflow-y: auto !important;
+}
+
 .natural-typography {
   h1 {
     margin-block: 0.67em;
@@ -8,4 +12,8 @@
   p {
     margin-top: 1em;
   }
+}
+
+.v-btn:before {
+  display: none;
 }
