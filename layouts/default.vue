@@ -8,7 +8,7 @@
 			<v-btn to="/recipes" text>Recipes</v-btn>
 			<v-btn
 				v-if="$vuetify.breakpoint.mdAndUp"
-				@click="dialog = true"
+				@click="signin"
 				dark
 				color="indigo"
 				rounded
@@ -22,17 +22,17 @@
 				<Nuxt />
 				<v-btn
 					v-if="$vuetify.breakpoint.smAndDown"
-					@click="dialog = true"
+					@click="signin"
 					fab
 					dark
 					color="indigo"
 					fixed
-					right="20"
-					bottom="20"
+					:right="true"
+					:bottom="true"
 				>
 					<v-icon dark>mdi-plus</v-icon>
 				</v-btn>
-				<v-dialog v-model="dialog" width="90vw" max-width="1024px">
+				<v-dialog v-model="dialog" width="95vw" max-width="1024px">
 					<Admin />
 				</v-dialog>
 			</v-container>
@@ -47,5 +47,18 @@ export default {
 		signedIn: false,
 		title: "MACC Cookbook",
 	}),
+	methods: {
+		signin() {
+			this.signedIn === true || window.location.hostname === "localhost"
+				? (this.dialog = true)
+				: netlifyIdentity.open();
+		},
+	},
 };
 </script>
+
+<style>
+	.v-dialog {
+		margin: 0 !important;
+	}
+</style>
