@@ -1,22 +1,7 @@
 <template>
 	<div class="natural-typography">
 		<h1>Recipes</h1>
-		<masonry-layout gap="16px">
-			<v-card
-				v-for="recipe in recipes"
-				:key="recipe.slug"
-				:to="recipe.path"
-				outlined
-			>
-				<v-img :src="recipe.image" aspect-ratio="1.333" />
-				<v-card-title>
-					<h3 class="title">{{ recipe.title }}</h3>
-				</v-card-title>
-				<v-card-text>
-					<p class="mb-0">{{ recipe.description }}</p>
-				</v-card-text>
-			</v-card>
-		</masonry-layout>
+		<RecipeList :recipes="recipes" />
 	</div>
 </template>
 

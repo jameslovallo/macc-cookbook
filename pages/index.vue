@@ -8,22 +8,7 @@
 			</p>
 			<h2>Recently Added</h2>
 		</div>
-		<masonry-layout gap="16px">
-			<v-card
-				v-for="recipe in recipes"
-				:key="recipe.slug"
-				:to="recipe.path"
-				outlined
-			>
-				<v-img :src="recipe.image" aspect-ratio="1.333" />
-				<v-card-title>
-					<h3 class="title">{{ recipe.title }}</h3>
-				</v-card-title>
-				<v-card-text>
-					<p class="my-0">{{ recipe.description }}</p>
-				</v-card-text>
-			</v-card>
-		</masonry-layout>
+		<RecipeList :recipes="recipes" />
 	</div>
 </template>
 
@@ -43,17 +28,3 @@ export default {
 	},
 };
 </script>
-
-<style lang="scss">
-	.title {
-		word-break: keep-all;
-	}
-	masonry-layout {
-		.v-card {
-			margin-bottom: 16px;
-			&__text {
-				width: auto;
-			}
-		}
-	}
-</style>

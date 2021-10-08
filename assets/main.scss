@@ -17,3 +17,19 @@ html {
 .v-btn:before {
   display: none;
 }
+
+.title {
+  word-break: keep-all;
+}
+masonry-layout {
+  .v-card {
+    margin-bottom: 16px;
+    > img {
+      display: block;
+      width: 100%;
+    }
+    &__text {
+      width: auto;
+    }
+  }
+}
