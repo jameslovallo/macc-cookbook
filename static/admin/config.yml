@@ -13,7 +13,7 @@ collections:
     folder: "content/recipes"
     format: "frontmatter"
     create: true
-    slug: "{{slug}}"
+    slug: "{{author}}-{{slug}}"
     editor:
       preview: false
     fields:

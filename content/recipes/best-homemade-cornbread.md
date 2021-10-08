@@ -4,18 +4,19 @@ title: The Best Homemade Cornbread Recipe!
 description: My family has been making this easy cornbread recipe for decades.
 image: /img/best-homemade-cornbread-recipe-4-of-4.jpg
 date: 2021-10-06T17:14:25.647Z
-author: null
+author: James Lovallo
 ---
+
 ## INGREDIENTS
 
-* 1 cup all-purpose flour
-* 1 cup yellow cornmeal
-* 2/3 cup granulated sugar
-* 1 teaspoon salt
-* 3 1/2 teaspoons baking powder
-* 1/3 cup neutral oil or melted butter
-* 1 large egg
-* 1 cup milk
+- 1 cup all-purpose flour
+- 1 cup yellow cornmeal
+- 2/3 cup granulated sugar
+- 1 teaspoon salt
+- 3 1/2 teaspoons baking powder
+- 1/3 cup neutral oil or melted butter
+- 1 large egg
+- 1 cup milk
 
 ## INSTRUCTIONS
 

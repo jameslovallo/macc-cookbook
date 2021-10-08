@@ -11,7 +11,8 @@
 				<h3 class="title">{{ recipe.title }}</h3>
 			</v-card-title>
 			<v-card-text>
-				<p class="mb-0">{{ recipe.description }}</p>
+				<p v-if="recipe.description" class="my-0">{{ recipe.description }}</p>
+				<p v-if="recipe.author" class="mb-0">Added by: {{ recipe.author }}</p>
 			</v-card-text>
 		</v-card>
 	</masonry-layout>
