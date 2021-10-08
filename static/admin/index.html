@@ -18,7 +18,7 @@
         if (link) {
           const title = document.querySelector("[id*=title]");
           const description = document.querySelector("[id*=description]");
-          link.addEventListener("change", async () => {
+          link.addEventListener("blur", async () => {
             if (link.value) {
               await fetch(
                 `http://api.linkpreview.net/?key=a7809f8c76c2dea3ab3ea3be91b02b60&q=${link.value}`
