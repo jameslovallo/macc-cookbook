@@ -54,6 +54,16 @@ export default {
 				: netlifyIdentity.open();
 		},
 	},
+	mounted() {
+		let signedIn = localStorage.getItem("gotrue.user");
+		this.signedIn = signedIn ? true : false;
+		netlifyIdentity.on("login", () => {
+			this.signedIn = true;
+		});
+		netlifyIdentity.on("logout", () => {
+			this.signedIn = false;
+		});
+	},
 };
 </script>
 
