@@ -1,11 +1,6 @@
 <template>
 	<masonry-layout gap="16px">
-		<v-card
-			v-for="recipe in recipes"
-			:key="recipe.slug"
-			:to="recipe.path"
-			outlined
-		>
+		<v-card v-for="recipe in recipes" :key="recipe.slug" :to="recipe.path">
 			<img :src="recipe.image" />
 			<v-card-title>
 				<h3 class="title">{{ recipe.title }}</h3>
