@@ -7,7 +7,9 @@
 			</v-card-title>
 			<v-card-text>
 				<p v-if="recipe.description" class="my-0">{{ recipe.description }}</p>
-				<p v-if="recipe.author" class="mb-0">Added by: {{ recipe.author }}</p>
+				<p v-if="recipe.author" class="mb-0">
+					Added by: <b>{{ recipe.author }}</b>
+				</p>
 			</v-card-text>
 		</v-card>
 	</masonry-layout>
