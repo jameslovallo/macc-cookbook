@@ -46,7 +46,6 @@
 							<v-toolbar-title>Add a Recipe</v-toolbar-title>
 							<v-spacer></v-spacer>
 							<v-btn
-								v-if="$vuetify.breakpoint.mdAndUp"
 								@click="showAdmin = false"
 								color="red darken-2"
 								text
