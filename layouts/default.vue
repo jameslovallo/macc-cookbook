@@ -5,7 +5,7 @@
 				<v-toolbar-title v-text="title" />
 			</nuxt-link>
 			<v-spacer />
-			<v-btn to="/recipes" text>Recipes</v-btn>
+			<v-btn to="/recipes" text>Find a Recipe</v-btn>
 			<v-btn
 				v-if="$vuetify.breakpoint.mdAndUp"
 				@click="signin"
@@ -53,7 +53,9 @@
 							flat
 							style="border-bottom: 1px solid rgb(223, 223, 227); flex-grow: 0"
 						>
-							<v-toolbar-title>Add a Recipe</v-toolbar-title>
+							<v-toolbar-title
+								>MACC Cookbook &nbsp;➜&nbsp; Edit</v-toolbar-title
+							>
 							<v-spacer></v-spacer>
 							<v-btn @click="showAdmin = false" color="red darken-2" text>
 								<v-icon dark>mdi-close</v-icon>

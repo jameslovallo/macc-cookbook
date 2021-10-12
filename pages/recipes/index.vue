@@ -1,6 +1,6 @@
 <template>
 	<div class="natural-typography">
-		<h1>Recipes</h1>
+		<h1>Find a Recipe</h1>
 		<RecipeList :recipes="recipes" />
 	</div>
 </template>
@@ -10,7 +10,9 @@ export default {
 	async asyncData({ $content, params, error }) {
 		let recipes;
 		try {
-			recipes = await $content("recipes", {deep: true}).sortBy("createdAt", "desc").fetch();
+			recipes = await $content("recipes", { deep: true })
+				.sortBy("createdAt", "desc")
+				.fetch();
 		} catch (e) {
 			error({ message: "Blog Post not found" });
 		}
