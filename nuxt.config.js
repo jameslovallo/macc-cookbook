@@ -51,13 +51,13 @@ export default {
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  content: { fullTextSearchFields: ["title", "description", "text"] },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ["~/assets/variables.scss"],
     theme: {
-      dark: 'auto',
+      dark: "auto",
       themes: {
         dark: {
           primary: colors.blue.darken2,
