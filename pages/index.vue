@@ -1,14 +1,16 @@
 <template>
 	<div class="natural-typography">
 		<div>
-			<h1 style="font-size: 4em">
+			<h1 :style="{ fontSize: $vuetify.breakpoint.lgAndUp ? '4em' : '' }">
 				Welcome to the Mack Avenue Community Church Cookbook!
 			</h1>
 			<p>
 				This is the place to share all of your favorite recipes with the rest of
 				the church.
 			</p>
-			<h2 style="font-size: 2em">Recently Added</h2>
+			<h2 :style="{ fontSize: $vuetify.breakpoint.lgAndUp ? '2em' : '' }">
+				Recently Added
+			</h2>
 		</div>
 		<RecipeList :recipes="recipes" />
 	</div>

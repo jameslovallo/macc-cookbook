@@ -36,6 +36,12 @@
 					</p>
 				</div>
 				<nuxt-content :document="recipe" />
+				<h2>Comments</h2>
+				<v-card>
+					<v-card-text>
+						<div id="disqus_thread"></div>
+					</v-card-text>
+				</v-card>
 			</v-col>
 		</v-row>
 	</div>
@@ -59,6 +65,16 @@ export default {
 		return {
 			recipe,
 		};
+	},
+	mounted() {
+		(function () {
+			// DON'T EDIT BELOW THIS LINE
+			var d = document,
+				s = d.createElement("script");
+			s.src = "https://macc-cookbook.disqus.com/embed.js";
+			s.setAttribute("data-timestamp", +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
 	},
 };
 </script>
