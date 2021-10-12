@@ -10,24 +10,25 @@ description: Shakshuka may be at the apex of eggs-for-dinner recipes, though in
   eggs into the pan, nestling them into the sauce
 image: https://static01.nyt.com/images/2021/03/28/dining/mc-shakshuka/mc-shakshuka-articleLarge.jpg
 date: 2021-10-08T00:29:42.100Z
-author: null
+author: James Lovallo
 ---
+
 ## INGREDIENTS
 
-* 3 tablespoons extra-virgin olive oil
-* 1 large onion, halved and thinly sliced
-* 1 large red bell pepper, seeded and thinly sliced
-* 3 garlic cloves, thinly sliced
-* 1 teaspoon ground cumin
-* 1 teaspoon sweet paprika
-* ⅛ teaspoon ground cayenne, or to taste
-* 1 (28-ounce) can whole plum tomatoes with their juices, coarsely chopped
-* ¾ teaspoon kosher salt, plus more as needed
-* ¼ teaspoon black pepper, plus more as needed
-* 5 ounces feta, crumbled (about 1 1/4 cups)
-* 6 large eggs
-* Chopped cilantro, for serving
-* Hot sauce, for serving
+- 3 tablespoons extra-virgin olive oil
+- 1 large onion, halved and thinly sliced
+- 1 large red bell pepper, seeded and thinly sliced
+- 3 garlic cloves, thinly sliced
+- 1 teaspoon ground cumin
+- 1 teaspoon sweet paprika
+- ⅛ teaspoon ground cayenne, or to taste
+- 1 (28-ounce) can whole plum tomatoes with their juices, coarsely chopped
+- ¾ teaspoon kosher salt, plus more as needed
+- ¼ teaspoon black pepper, plus more as needed
+- 5 ounces feta, crumbled (about 1 1/4 cups)
+- 6 large eggs
+- Chopped cilantro, for serving
+- Hot sauce, for serving
 
 ## PREPARATION
 
