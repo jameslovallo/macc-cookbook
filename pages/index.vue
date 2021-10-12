@@ -8,7 +8,7 @@
 				This is the place to share all of your favorite recipes with the rest of
 				the church.
 			</p>
-			<h2>Recently Added</h2>
+			<h2 style="font-size: 2em">Recently Added</h2>
 		</div>
 		<RecipeList :recipes="recipes" />
 	</div>

@@ -53,9 +53,9 @@
 							flat
 							style="border-bottom: 1px solid rgb(223, 223, 227); flex-grow: 0"
 						>
-							<v-toolbar-title
-								>MACC Cookbook &nbsp;➜&nbsp; Edit</v-toolbar-title
-							>
+							<v-toolbar-title>
+								MACC Cookbook &nbsp;➜&nbsp; Edit
+							</v-toolbar-title>
 							<v-spacer></v-spacer>
 							<v-btn @click="showAdmin = false" color="red darken-2" text>
 								<v-icon dark>mdi-close</v-icon>

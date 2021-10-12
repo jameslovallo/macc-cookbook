@@ -5,20 +5,17 @@ description: "Here's what you need: fresh spinach, ricotta cheese, chicken
   breasts, cheddar cheese, paprika, salt, pepper"
 image: https://img.buzzfeed.com/video-api-prod/assets/7cacf17aa8df42bd93f699c9a08e11ef/BFV6146_Hasselback_Chicken_Thumb_A.jpg
 date: 2021-10-12T00:09:51.383Z
-author: Maggie Lovallo
+author: null
 ---
+## Ingredients (2 servings)
 
-## Ingredients
-
-for 2 servings
-
-- ¼ cup fresh spinach
-- ¼ cup ricotta cheese
-- 2 chicken breasts
-- ¼ cup cheddar cheese
-- 1 teaspoon paprika
-- salt, to taste
-- pepper, to taste
+* ¼ cup fresh spinach
+* ¼ cup ricotta cheese
+* 2 chicken breasts
+* ¼ cup cheddar cheese
+* 1 teaspoon paprika
+* salt, to taste
+* pepper, to taste
 
 ## Preparation
 
