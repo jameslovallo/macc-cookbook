@@ -10,7 +10,7 @@ export default {
 	async asyncData({ $content, params, error }) {
 		let recipes;
 		try {
-			recipes = await $content("recipes").sortBy("createdAt", "desc").fetch();
+			recipes = await $content("recipes", {deep: true}).sortBy("createdAt", "desc").fetch();
 		} catch (e) {
 			error({ message: "Blog Post not found" });
 		}

@@ -47,10 +47,14 @@ export default {
 		let recipe;
 
 		try {
-			recipe = await $content("recipes", params.slug).fetch();
+			recipe = await $content("recipes", { deep: true })
+				.where({ path: { $eq: "/recipes/" + params.pathMatch } })
+				.fetch();
 		} catch (e) {
 			error({ message: "Recipe not found" });
 		}
+
+		recipe = recipe[0];
 
 		return {
 			recipe,

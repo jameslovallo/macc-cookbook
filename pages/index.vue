@@ -1,7 +1,9 @@
 <template>
 	<div class="natural-typography">
 		<div>
-			<h1>Welcome to the Mack Avenue Community Church Cookbook!</h1>
+			<h1 style="font-size: 4em">
+				Welcome to the Mack Avenue Community Church Cookbook!
+			</h1>
 			<p>
 				This is the place to share all of your favorite recipes with the rest of
 				the church.
@@ -17,7 +19,10 @@ export default {
 	async asyncData({ $content, params, error }) {
 		let recipes;
 		try {
-			recipes = await $content("recipes").sortBy("createdAt", "desc").fetch();
+			recipes = await $content("recipes", { deep: true })
+				.limit(10)
+				.sortBy("createdAt", "desc")
+				.fetch();
 		} catch (e) {
 			error({ message: "Blog Post not found" });
 		}

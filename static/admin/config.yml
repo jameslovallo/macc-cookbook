@@ -8,12 +8,144 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "recipes"
-    label: "Recipe"
-    folder: "content/recipes"
+  - name: "bread"
+    label: "Bread"
+    folder: "content/bread"
     format: "frontmatter"
     create: true
-    slug: "{{author}}-{{slug}}"
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Link",
+          name: "url",
+          widget: "string",
+          required: false,
+          hint: "Is this a recipe you found online? You can share it here with your notes and modifications.",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Recipe & Notes", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { name: "author", widget: "hidden" }
+  - name: "breakfast"
+    label: "Breakfast or Brunch"
+    folder: "content/recipes/breakfast"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Link",
+          name: "url",
+          widget: "string",
+          required: false,
+          hint: "Is this a recipe you found online? You can share it here with your notes and modifications.",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Recipe & Notes", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { name: "author", widget: "hidden" }
+  - name: "dessert"
+    label: "Dessert"
+    folder: "content/recipes/dessert"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Link",
+          name: "url",
+          widget: "string",
+          required: false,
+          hint: "Is this a recipe you found online? You can share it here with your notes and modifications.",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Recipe & Notes", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { name: "author", widget: "hidden" }
+  - name: "main"
+    label: "Main Dish"
+    folder: "content/recipes/main"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Link",
+          name: "url",
+          widget: "string",
+          required: false,
+          hint: "Is this a recipe you found online? You can share it here with your notes and modifications.",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Recipe & Notes", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { name: "author", widget: "hidden" }
+  - name: "side"
+    label: "Side Dish"
+    folder: "content/recipes/side"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Link",
+          name: "url",
+          widget: "string",
+          required: false,
+          hint: "Is this a recipe you found online? You can share it here with your notes and modifications.",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Recipe & Notes", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { name: "author", widget: "hidden" }
+  - name: "snack"
+    label: "Snack or Appetizer"
+    folder: "content/recipes/snack"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Link",
+          name: "url",
+          widget: "string",
+          required: false,
+          hint: "Is this a recipe you found online? You can share it here with your notes and modifications.",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Recipe & Notes", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { name: "author", widget: "hidden" }
+  - name: "soup"
+    label: "Soup, Stew or Chili"
+    folder: "content/recipes/soup"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:

@@ -2,6 +2,24 @@ html {
   overflow-y: auto !important;
 }
 
+@font-face {
+  font-family: "Palanquin";
+  src: url("~/assets/fonts/PalanquinDark.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Palanquin;
+  line-height: 1.25;
+}
+
 .natural-typography {
   h1 {
     margin-block: 0.67em;
