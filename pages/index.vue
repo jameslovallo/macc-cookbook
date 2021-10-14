@@ -5,8 +5,8 @@
 				Welcome to the Mack Avenue Community Church Cookbook!
 			</h1>
 			<p>
-				This is the place to share all of your favorite recipes with the rest of
-				the church.
+				This is the place to share recipes with your MACC Fam and discover new
+				favorites.
 			</p>
 			<h2 :style="{ fontSize: $vuetify.breakpoint.lgAndUp ? '2em' : '' }">
 				Recently Added

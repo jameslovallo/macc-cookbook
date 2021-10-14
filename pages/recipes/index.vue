@@ -126,17 +126,3 @@ export default {
 	},
 };
 </script>
-
-<style lang="scss">
-	.title {
-		word-break: keep-all;
-	}
-	masonry-layout {
-		.v-card {
-			margin-bottom: 16px;
-			&__text {
-				width: auto;
-			}
-		}
-	}
-</style>
