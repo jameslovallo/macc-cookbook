@@ -103,6 +103,9 @@ export default {
 			}
 			this.searchResults = matches;
 			this.$refs.list && this.$refs.list.updateLayout();
+			setTimeout(() => {
+				this.$refs.list && this.$refs.list.updateLayout();
+			}, 300);
 		},
 		setAuthors() {
 			let authors = [];
