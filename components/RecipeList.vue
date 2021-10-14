@@ -1,6 +1,11 @@
 <template>
-	<masonry-layout gap="16px">
-		<v-card v-for="recipe in recipes" :key="recipe.slug" :to="recipe.path">
+	<masonry-layout :gap="gap" ref="masonry">
+		<v-card
+			v-for="recipe in recipes"
+			:key="recipe.slug"
+			:to="recipe.path"
+			:style="{ marginBottom: gap }"
+		>
 			<img :src="recipe.image" />
 			<v-card-title>
 				<h3 class="title">{{ recipe.title }}</h3>
@@ -18,5 +23,15 @@
 <script>
 export default {
 	props: ["recipes"],
+	computed: {
+		gap() {
+			return this.$vuetify.breakpoint.mdAndUp ? "24px" : "16px";
+		},
+	},
+	methods: {
+		updateLayout() {
+			this.$refs.masonry.layout();
+		},
+	},
 };
 </script>

@@ -10,7 +10,7 @@
 				v-if="$vuetify.breakpoint.mdAndUp"
 				@click="signin"
 				dark
-				color="indigo"
+				color="primary"
 				rounded
 			>
 				<v-icon dark left style="height: 24px; width: 24px">
@@ -30,7 +30,6 @@
 					@click="signin"
 					fab
 					dark
-					color="indigo"
 					fixed
 					:right="true"
 					:bottom="true"
