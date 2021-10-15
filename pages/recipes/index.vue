@@ -36,21 +36,15 @@
 					@change="search"
 				/>
 			</v-col>
-			<v-col v-if="query || category || author">
-				<v-btn color="primary" dark rounded @click="resetFilters">
-					Reset Filters
-				</v-btn>
-			</v-col>
 		</v-row>
-		<RecipeList
-			v-if="searchResults.length > 0"
-			:recipes="searchResults"
-			ref="list"
-		/>
-		<div v-else>
+		<div v-if="!searchResults.length">
 			<h2>No results found.</h2>
 			<p>Try a different search or reset your filters.</p>
+			<v-btn color="primary" dark rounded @click="resetFilters">
+				Reset Filters
+			</v-btn>
 		</div>
+		<RecipeList v-else :recipes="searchResults" ref="list" />
 	</div>
 </template>
 

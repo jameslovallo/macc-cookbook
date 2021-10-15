@@ -8,13 +8,9 @@
 				This is the place to share recipes with your MACC Fam and discover new
 				favorites.
 			</p>
-			<h2 :style="{ fontSize: $vuetify.breakpoint.lgAndUp ? '2em' : '' }">
-				Explore
-			</h2>
+			<h2 class="mt-8">Explore</h2>
 			<CategoryButtons />
-			<h2 :style="{ fontSize: $vuetify.breakpoint.lgAndUp ? '2em' : '' }">
-				Recently Added
-			</h2>
+			<h2 class="mt-8">Recently Added</h2>
 		</div>
 		<RecipeList :recipes="recipes" />
 	</div>
