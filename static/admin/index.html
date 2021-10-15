@@ -69,7 +69,30 @@
     </script>
 
     <style>
+      @media (max-width: 600px) {
+        .css-q8mdjk-CollectionTopRow.enajvhy1 {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .css-q8mdjk-CollectionTopRow.enajvhy1 > h1 {
+          margin-bottom: 0.5em;
+        }
+        .css-q8mdjk-CollectionTopRow.enajvhy1 > a {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
       @media (max-width: 799px) {
+        input,
+        textarea {
+          font-size: 1rem !important;
+        }
+
+        .css-1whurdv-BackCollection.evqrzhe12 {
+          display: none;
+        }
+
         aside.css-1gj57a0-SidebarContainer-card.el9l68m0 {
           position: static;
           width: 100%;
@@ -97,7 +120,7 @@
 
         .css-16b5p1f-ToolbarSectionMain-toolbarSection {
           flex-direction: column;
-          justify-content: space-evenly;
+          justify-content: center;
         }
 
         /* Media */
@@ -241,6 +264,10 @@
         .ep5ukwb0.css-1f3mf5k-StyledModal {
           width: calc(100% - 60px);
           height: calc(100% - 60px);
+        }
+
+        .css-eixap-PaginationMessage-NoEntriesMessage {
+          width: 100%;
         }
       }
     </style>
