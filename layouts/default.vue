@@ -94,12 +94,6 @@ export default {
 			this.signedIn = false;
 		});
 	},
-	head() {
-		if (this.$vuetify.theme.dark)
-			return {
-				style: [{ cssText: "html {color-scheme: dark;}" }],
-			};
-	},
 };
 </script>
 
