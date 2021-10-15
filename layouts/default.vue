@@ -5,7 +5,7 @@
 				<v-toolbar-title v-text="title" />
 			</nuxt-link>
 			<v-spacer />
-			<v-btn to="/recipes" text>
+			<v-btn to="/recipes" text rounded>
 				<v-icon left>mdi-magnify</v-icon>
 				Search
 			</v-btn>

@@ -8,6 +8,7 @@
 					placeholder="Search"
 					prepend-inner-icon="mdi-magnify"
 					hide-details
+					rounded
 					solo
 					color="accent"
 					@change="search"
@@ -18,6 +19,7 @@
 					v-model="category"
 					:items="categories"
 					hide-details
+					rounded
 					solo
 					item-color="accent"
 					@change="search"
@@ -28,13 +30,16 @@
 					v-model="author"
 					:items="authors"
 					hide-details
+					rounded
 					solo
 					item-color="accent"
 					@change="search"
 				/>
 			</v-col>
 			<v-col v-if="query || category || author">
-				<v-btn color="primary" dark @click="resetFilters">Reset Filters</v-btn>
+				<v-btn color="primary" dark rounded @click="resetFilters">
+					Reset Filters
+				</v-btn>
 			</v-col>
 		</v-row>
 		<RecipeList
