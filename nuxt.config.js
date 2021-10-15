@@ -11,7 +11,12 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "This is the place to share recipes with your MACC Fam and discover new favorites."
+      },
       { name: "format-detection", content: "telephone=no" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
@@ -51,7 +56,7 @@ export default {
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: { fullTextSearchFields: ["title", "description", "text"] },
+  content: {},
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

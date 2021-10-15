@@ -36,6 +36,11 @@
 					@change="search"
 				/>
 			</v-col>
+			<v-col v-if="(query || category || author) && searchResults.length">
+				<v-btn color="primary" dark rounded @click="resetFilters">
+					Reset Filters
+				</v-btn>
+			</v-col>
 		</v-row>
 		<div v-if="!searchResults.length">
 			<h2>No results found.</h2>
