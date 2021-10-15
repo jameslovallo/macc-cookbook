@@ -13,7 +13,7 @@
 					height="64px"
 					width="64px"
 				/>
-				<v-card-text class="caption">{{ c.label }}</v-card-text>
+				<v-card-text class="caption"><b>{{ c.label }}</b></v-card-text>
 			</v-card>
 		</v-col>
 	</v-row>
