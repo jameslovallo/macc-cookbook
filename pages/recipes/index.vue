@@ -119,7 +119,7 @@ export default {
 		setAuthors() {
 			let authors = [];
 			this.recipes.forEach((recipe) => {
-				let author = recipe.author;
+				const author = recipe.author;
 				if (!authors.includes(author)) authors.push(author);
 			});
 			authors = authors.sort();
@@ -133,7 +133,7 @@ export default {
 		},
 	},
 	created() {
-		let category = this.$route.query.category;
+		const category = this.$route.query.category;
 		if (category) this.category = category;
 		this.search();
 		this.setAuthors();

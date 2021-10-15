@@ -84,8 +84,8 @@ export default {
 		},
 	},
 	mounted() {
+		const signedIn = localStorage.getItem("gotrue.user");
 		this.adminURL = window.location.origin + "/admin";
-		let signedIn = localStorage.getItem("gotrue.user");
 		this.signedIn = signedIn ? true : false;
 		netlifyIdentity.on("login", () => {
 			this.signedIn = true;
