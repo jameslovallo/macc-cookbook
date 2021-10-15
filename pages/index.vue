@@ -37,5 +37,10 @@ export default {
 			recipes,
 		};
 	},
+	head() {
+		return {
+			title: "Home",
+		};
+	},
 };
 </script>

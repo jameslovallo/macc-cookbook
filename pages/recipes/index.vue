@@ -9,7 +9,7 @@
 					prepend-inner-icon="mdi-magnify"
 					hide-details
 					solo
-					item-color="accent"
+					color="accent"
 					@change="search"
 				/>
 			</v-col>
@@ -33,7 +33,7 @@
 					@change="search"
 				/>
 			</v-col>
-			<v-col>
+			<v-col v-if="query || category || author">
 				<v-btn color="primary" dark @click="resetFilters">Reset Filters</v-btn>
 			</v-col>
 		</v-row>
@@ -79,6 +79,11 @@ export default {
 		}
 		return {
 			recipes,
+		};
+	},
+	head() {
+		return {
+			title: "Search",
 		};
 	},
 	methods: {

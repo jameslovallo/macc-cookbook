@@ -50,15 +50,22 @@ export default {
 			recipe,
 		};
 	},
-	mounted() {
-		(function () {
-			// DON'T EDIT BELOW THIS LINE
+	head() {
+		return {
+			title: this.recipe.title,
+		};
+	},
+	methods: {
+		disqus() {
 			var d = document,
 				s = d.createElement("script");
 			s.src = "https://macc-cookbook.disqus.com/embed.js";
 			s.setAttribute("data-timestamp", +new Date());
 			(d.head || d.body).appendChild(s);
-		})();
+		},
+	},
+	mounted() {
+		this.disqus();
 	},
 };
 </script>
