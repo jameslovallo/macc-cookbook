@@ -5,7 +5,10 @@
 				<v-toolbar-title v-text="title" />
 			</nuxt-link>
 			<v-spacer />
-			<v-btn to="/recipes" text>Find a Recipe</v-btn>
+			<v-btn to="/recipes" text>
+				<v-icon left>mdi-magnify</v-icon>
+				Search
+			</v-btn>
 			<v-btn
 				v-if="$vuetify.breakpoint.mdAndUp"
 				@click="signin"
@@ -13,8 +16,8 @@
 				color="primary"
 				rounded
 			>
-				<v-icon left>mdi-fountain-pen-tip</v-icon>
-				Edit
+				<v-icon left>mdi-plus</v-icon>
+				Add
 			</v-btn>
 		</v-app-bar>
 		<v-main>
@@ -30,7 +33,7 @@
 					:right="true"
 					:bottom="true"
 				>
-					<v-icon dark>mdi-fountain-pen-tip</v-icon>
+					<v-icon dark>mdi-plus</v-icon>
 				</v-btn>
 				<v-dialog
 					v-model="showAdmin"
@@ -44,7 +47,7 @@
 							style="border-bottom: 1px solid rgb(223, 223, 227); flex-grow: 0"
 						>
 							<v-toolbar-title>
-								MACC Cookbook &nbsp;➜&nbsp; Edit
+								MACC Cookbook &nbsp;➜&nbsp; Add
 							</v-toolbar-title>
 							<v-spacer></v-spacer>
 							<v-btn @click="showAdmin = false" color="red darken-2" text>

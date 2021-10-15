@@ -124,6 +124,8 @@ export default {
 		},
 	},
 	created() {
+		let category = this.$route.query.category;
+		if (category) this.category = category;
 		this.search();
 		this.setAuthors();
 	},

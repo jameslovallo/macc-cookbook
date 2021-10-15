@@ -9,6 +9,10 @@
 				favorites.
 			</p>
 			<h2 :style="{ fontSize: $vuetify.breakpoint.lgAndUp ? '2em' : '' }">
+				Explore
+			</h2>
+			<CategoryButtons />
+			<h2 :style="{ fontSize: $vuetify.breakpoint.lgAndUp ? '2em' : '' }">
 				Recently Added
 			</h2>
 		</div>
