@@ -15,14 +15,14 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "This is the place to share recipes with your MACC Fam and discover new favorites."
+          "This is the place to share recipes with your MACC Fam and discover new favorites.",
       },
-      { name: "format-detection", content: "telephone=no" }
+      { name: "format-detection", content: "telephone=no" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     script: [
-      { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" }
-    ]
+      { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -37,7 +37,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
-    "@nuxtjs/vuetify"
+    "@nuxtjs/vuetify",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -45,14 +45,14 @@ export default {
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
     // https://go.nuxtjs.dev/content
-    "@nuxt/content"
+    "@nuxt/content",
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: "en"
-    }
+      lang: "en",
+    },
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -62,20 +62,19 @@ export default {
   vuetify: {
     customVariables: ["~/assets/variables.scss"],
     theme: {
-      dark: "auto",
       themes: {
         light: {
           primary: colors.indigo,
-          accent: colors.indigo
+          accent: colors.indigo,
         },
         dark: {
           primary: colors.indigo,
-          accent: colors.indigo.lighten3
-        }
-      }
-    }
+          accent: colors.indigo.lighten3,
+        },
+      },
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
 };

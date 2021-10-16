@@ -83,7 +83,10 @@ export default {
 				: netlifyIdentity.open();
 		},
 	},
+	created() {},
 	mounted() {
+		const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+		if (darkMode) this.$vuetify.theme.dark = true;
 		const signedIn = localStorage.getItem("gotrue.user");
 		this.adminURL = window.location.origin + "/admin";
 		this.signedIn = signedIn ? true : false;
